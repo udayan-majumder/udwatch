@@ -1,0 +1,716 @@
+@import url(https://fonts.googleapis.com/css?family=Overlock:regular,italic,700,700italic,900,900italic);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+select {
+    width: max-content;
+    padding: 14px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.home-page-search {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+}
+
+.home-page-search img {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, .5);
+
+}
+
+.shadow {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 89;
+}
+
+.home-page-search-inside {
+    z-index: 90;
+}
+
+.myinput {
+    padding: 16px 18px;
+    border: none;
+    width: 280px;
+    border-radius: 6px;
+    margin-right: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.myinput:hover {
+    width: 350px;
+    transition: 0.8s ease-in-out;
+}
+
+.myinput {
+    transition: 0.8s ease-in-out;
+}
+
+.myinput:focus {
+    outline: lightblue solid 1px;
+    outline-offset: 2px;
+
+}
+
+.mybutton {
+    border: none;
+    padding: 16px 18px;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.mybutton:focus {
+    outline: lightblue solid 1px;
+    outline-offset: 2px;
+}
+
+.mybutton i {
+    color: #fff;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    background-color: #282A35;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    box-shadow: 0 6px 4px 0px rgba(0, 0, 0, .2);
+    z-index: 99;
+}
+
+
+body {
+    background-color: #ffffff;
+}
+
+
+.logo {
+    position: fixed;
+    top: 0;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99;
+    padding: 13px 10px;
+    margin-left: 50px;
+  
+}
+
+
+.logo a {
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+
+.logo a:hover {
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.watch {
+    color: #00acac;
+}
+
+.search {
+    position: relative;
+    top: 40px;
+    text-align: right;
+
+}
+
+
+.search input {
+    text-align: left;
+    width: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search i {
+    color: rgb(8, 8, 8);
+    padding: 2px 7px;
+}
+
+.search button {
+    position: relative;
+    left: 3px;
+    bottom: 1px;
+}
+
+.icon-dropdown {
+    visibility: hidden;
+}
+
+.links-dropdown {
+    /* visibility: hidden; */
+    list-style: none;
+
+}
+
+.menubar {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 25%;
+    padding: 15px;
+
+}
+
+.menubar li a:hover {
+    transition: 0.3s ease-in-out;
+
+}
+.menubar li a{
+    transition: 0.3s ease-in-out;
+}
+
+.menubar-inside {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    font-size: 17px;
+
+}
+
+
+.menubar-inside li a:hover {
+    color: lightgreen
+}
+
+
+.menubar-inside li a {
+    color: #ffffff;
+}
+
+.links-genre {
+    list-style: none;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    right: 15px;
+    visibility: hidden;
+
+
+}
+
+.links-genre li {
+    padding: 5px 5px;
+    background-color: grey;
+    transition: 0.5s ease-in-out;
+
+    /* border: 1px solid #eef1ff; */
+
+}
+
+.menubar-inside li:hover .links-genre {
+    visibility: visible;
+
+
+
+}
+
+.links-genre li a:hover {
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.topten {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    padding: 10px;
+    color: #fff;
+    border-bottom: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+}
+
+.footer {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    /* top: 40cm; */
+    background-color: #282A35;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    border-top: 1px solid #000000;
+
+}
+
+
+.kdrama-genre {
+    list-style: none;
+    position: relative;
+    top: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+.kdrama-genre li {
+    padding: 13px;
+}
+
+
+.kdrama-genre li a:hover {
+    color: lightgreen;
+    transition: 0.3s ease-in-out;
+}
+
+
+.kdrama-genre li a {
+    color: #fff;
+}
+
+.cdrama-genre {
+    list-style: none;
+    position: relative;
+    top: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.cdrama-genre li {
+    padding: 13px;
+}
+
+.cdrama-genre li a {
+    color: #fff;
+}
+
+.cdrama-genre li a:hover {
+    color: lightgreen;
+    transition: 0.3s ease-in-out;
+}
+
+.anime-genre {
+    list-style: none;
+    position: relative;
+    top: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.anime-genre li {
+    padding: 13px;
+}
+
+.anime-genre li a {
+    color: #fff;
+}
+
+.anime-genre li a:hover {
+    color: lightgreen;
+    transition: 0.3s ease-in-out;
+}
+
+
+.movies-genre {
+    list-style: none;
+    position: relative;
+    top: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+}
+
+.movies-genre li {
+    padding: 13px;
+}
+
+.movies-genre li a {
+    color: #fff;
+}
+
+.movies-genre li a:hover {
+    color: lightgreen;
+    transition: 0.3s ease-in-out;
+}
+
+.sociallinks {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: #282A35;
+    /* top: 39cm; */
+    border: 1px solid #000000;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+
+}
+
+.links li {
+    font-size: 18px;
+}
+
+.links li a {
+    color: white;
+}
+
+.links li a:hover {
+    color: lightgreen;
+    transition: 0.6s ease-in-out;
+}
+
+.K-Drama {
+    color: lightgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 0px;
+    border-bottom: 3px solid lightgreen;
+}
+
+.C-Drama {
+    color: lightgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 0px;
+    border-bottom: 3px solid lightgreen;
+}
+
+.Anime {
+    color: lightgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 0px;
+    border-bottom: 3px solid lightgreen;
+}
+
+.Movies {
+    color: lightgreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 0px;
+    border-bottom: 3px solid lightgreen;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        height: 40px;
+        width: 100%;
+        background-color: #282A35;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+
+    .logo {
+        position: fixed;
+        left: 100px;
+        top: 0;
+        padding: 3px 0px;
+        margin-left: none;
+
+
+    }
+
+
+
+
+    .footer {
+        height: 1650px;
+        width: 100%;
+        top:5cm;
+        position: relative;
+        background-color: #282A35;
+        display: list-item;
+        color: #fff;
+        border-top: 1px solid #000000;
+        text-align: center;
+
+    }
+    .sociallinks{
+        position: relative;
+        top: 5cm;
+    }
+
+    .search {
+        position: relative;
+        left: 30px;
+        top: 300px;
+
+
+
+
+    }
+
+    .search input {
+        height: 15px;
+        width: 50%;
+
+    }
+
+    .search i {
+        color: rgb(255, 255, 255);
+        padding: 2px 4px;
+        position: relative;
+        right: 120px;
+    }
+
+    .search button {
+        position: relative;
+        right: 120px;
+        bottom: 1px;
+        color: #000000;
+    }
+
+    .icon-dropdown {
+        visibility: visible;
+        position: fixed;
+        top: 10px;
+        left: 2px;
+        list-style: none;
+        color: rgb(255, 255, 255);
+    }
+
+    .menubar {
+        visibility: hidden;
+    }
+
+    .icon-dropdown li a:hover,
+    a.active {
+        color: lightgreen;
+
+    }
+
+    .home-page-search img {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+
+    .icon-dropdown-inside {
+        visibility: hidden;
+        list-style: none;
+        background-color: #282A35;
+        position: relative;
+        right: 2px;
+        top: 13px;
+
+    }
+
+    .icon-dropdown li:hover .icon-dropdown-inside {
+        visibility: visible;
+    }
+
+    .icon-dropdown-inside li {
+        padding: 10px 60px;
+        border-top: 1px solid #000000;
+
+    }
+
+    .icon-dropdown-inside li a {
+        color: #ffffff;
+    }
+
+    .selected {
+        position: absolute;
+        top: 55px;
+        right: 60px;
+        padding: 8px;
+        margin-right: 2px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+
+    .myinput {
+        padding: 16px 18px;
+        border: none;
+        width: 260px;
+        border-radius: 6px;
+        margin-right: 5px;
+        transition: 0.2s ease-in-out;
+
+    }
+
+    .myinput:hover {
+        width: 300px;
+        transition: 0.8s ease-in-out;
+    }
+
+    .home-page-search {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+
+    }
+
+    .home-page-search-inside-left-bottom {
+        position: relative;
+        bottom: 70px;
+
+    }
+    
+ 
+    .links li {
+        font-size: 15px;
+    }
+
+
+    .K-Drama {
+        text-align: center;
+
+    }
+
+    .C-Drama {
+        text-align: center;
+
+    }
+
+    .Anime {
+        text-align: center;
+
+    }
+
+    .Movies {
+        text-align: center;
+    }
+    .bottomSection{
+        height:60vh !important;
+        position: relative;
+        top:190px;
+    }
+    .swiper{
+        width:350px !important;
+        aspect-ratio: 4/3 !important;
+    }
+    /* .swiper-button-next {
+     left :300px !important;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .swiper-button-prev {
+       left: 0px !important;
+        border-radius: 0 20px 20px 0;
+    } */
+    .topten{
+        position:relative;
+        top:185px;
+    }
+    
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .swiper{
+        width:700px !important;
+        aspect-ratio: 16/9!important;
+    }
+    .menubar {
+        position: absolute;
+        right: 0;
+        top: 3px;
+        width: 25%;
+        padding: 15px;
+    
+    }
+    .menubar-inside li{
+       padding: 0px 5px;
+    }
+}
+.swiper {
+    width: 900px;
+    aspect-ratio: 16/9;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    aspect-ratio: 16/9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    padding: 32px;
+    color: whitesmoke !important;
+    transition: 0.4s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-next {
+    right: 50px !important;
+    border-radius: 20px 0 0 20px;
+}
+
+.swiper-button-prev {
+    left: 50px !important;
+    border-radius: 0 20px 20px 0;
+}
+
+.bottomSection {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+    text-underline-offset: 2px;
+    font-size: 18px;
+}
+
+.bottomSection h1 {
+    font-size: 50px;
+    font-family: 'Overlock', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.137);
+}
+
+.topten {
+    /* add box shadow */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    /* box-shadow:  rgba(0, 0, 0, 1); */
+}
+
+.pink {
+    color: rgb(255, 0, 132);
+}

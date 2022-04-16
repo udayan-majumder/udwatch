@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDwatch</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <ul class="icon-dropdown">
+            <li><a><i class="fa fa-bars"></i></a>
+                <ul class="icon-dropdown-inside">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Links</a></li>
+                    <ul class="links-dropdown">
+                        <li><a href="https://dramacool9.ae/">K-drama</a></li>
+                        <li><a href="https://dramacool9.ae/">C-drama</a></li>
+                        <li><a href="https://zoro.to/">Anime</a></li>
+                        <li><a href="https://yesmovies.at/">Movies</a></li>
+                    </ul>
+            </li>
+        </ul>
+        </li>
+        </ul>
+
+        <div class="menubar">
+            <ul class="menubar-inside">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Links</a>
+                    <ul class="links-genre">
+                        <li><a href="https://dramacool9.ae/">K-drama</a></li>
+                        <li><a href="https://dramacool9.ae/">C-Drama</a></li>
+                        <li><a href="https://zoro.to/">Anime</a></li>
+                        <li><a href="https://yesmovies.at/">Movies</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <span class="logo"><a href="./index.html">UD<span class="watch">watch</span></a></span>
+    <script src="./javascript/search.js"></script>
+
+    <!-- Home -->
+    <div class="home-page-search">
+        <div class="home-page-search-inside">
+            <div class="home-page-search-inside-left-bottom">
+                <select class="selected">
+                    <option>K-Drama</option>
+                    <option>C-Drama</option>
+                    <option>Anime</option>
+                    <option>Movies</option>
+                </select>
+                <input class="myinput" type="text" placeholder="Search for your favorite shows">
+                <button class="mybutton" onclick="ok()"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="shadow"></div>
+        <img src="/pictures/kdrama.jpg" alt="">
+    </div>
+
+    <div class="top10">
+        <div class="topten">Top<span style="color:#00acac">-</span>10 List</div>
+
+        <!-- Slider main container -->
+
+        <div class="bottomSection">
+            <h1>K-<span class="pink">Drama</span></h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/oqxAJKy0ii4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/eXMjTXL2Vks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/50ek4HQo0Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/8AcNEVUzV4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/S12-4mXCNj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="853" height="480" src="https://www.youtube.com/embed/IN5TD4VRcSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/E7s9pHnIH9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/e43gG2nC8Cg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/M-PHcxPyasA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800"src="https://www.youtube.com/embed/wkHjOTFv60g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+                </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="bottomSection">
+            <h1>C-<span class="pink">Drama</span></h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/HmhVK9onFLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/tiiN4rDwa8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/SjCcXmqO8GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/COAGJgaRAVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/evdvSgJms3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/DyAsfo6rEz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/4jzQ4wPbHoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/ReRLQ9GN2iQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/u4MKRRJM3-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/BzIEA8_MXLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="bottomSection">
+            <h1>A<span class="pink">nime</span></h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/MGRm4IzK1SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/ZclBluzAZVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/2MKkj1DQ0NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/9aS-EgdAq6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/d6kBeJjTGnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/vk6mg74R5Ek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/Amag3NrjBc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/3aL0gDZtFbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/uMYhjVwp0Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="swiper-slide"><iframe width="800" src="https://www.youtube.com/embed/OhNwckCLzis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+  
+    </div>
+
+
+    <div class="footer">
+        <span class="kdrama">
+            <h1 class="K-Drama">K-Drama</h1>
+            <ul class="kdrama-genre">
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=action">Action</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=horror">Horror</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=thriller">Thriller</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=Romance">Romance</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=Comedy">Comedy</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=Adventure">Adventure</a>
+                </li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=Mystery">Mystery</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=korean&genre=law">Law</a></li>
+            </ul>
+        </span>
+        <span class="cdrama">
+            <h1 class="C-Drama">C-Drama</h1>
+            <ul class="cdrama-genre">
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=Action">Action</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=horror">Horror</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=thriller">Thriller</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=Romance">Romance</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=Comedy">Comedy</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=Adventure">Adventure</a>
+                </li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=Mystery">Mystery</a></li>
+                <li><a href="https://www.dramacool9.co/category/drama/?country=chinese&genre=Historical">Historical</a>
+                </li>
+            </ul>
+        </span>
+        <span class="anime">
+            <h1 class="Anime">Anime</h1>
+            <ul class="anime-genre">
+                <li><a href="https://zoro.to/genre/action">Action</a></li>
+                <li><a href="https://zoro.to/genre/horror">Horror</a></li>
+                <li><a href="https://zoro.to/genre/thriller">Thriller</a></li>
+                <li><a href="https://zoro.to/genre/romance">Romance</a></li>
+                <li><a href="https://zoro.to/genre/Comedy">Comedy</a></li>
+                <li><a href="https://zoro.to/genre/Adventure">Adventure</a></li>
+                <li><a href="https://zoro.to/genre/mystery">Mystery</a></li>
+                <li><a href="https://zoro.to/genre/fantasy">Fantasy</a></li>
+            </ul>
+        </span>
+        <span class="movies">
+            <h1 class="Movies">Movies</h1>
+            <ul class="movies-genre">
+                <li><a href="https://yesmovies.at/genre/action">Action</a></li>
+                <li><a href="https://yesmovies.at/genre/horror">Horror</a></li>
+                <li><a href="https://yesmovies.at/genre/thriller">Thriller</a></li>
+                <li><a href="https://yesmovies.at/genre/romance">Romance</a></li>
+                <li><a href="https://yesmovies.at/genre/comedy">Comedy</a></li>
+                <li><a href="https://yesmovies.at/genre/adventure">Adventure</a></li>
+                <li><a href="https://yesmovies.at/genre/fantasy">Fantasy</a></li>
+                <li><a href="https://yesmovies.at/genre/crime">crime</a></li>
+            </ul>
+        </span>
+    </div>
+    <div class="sociallinks">Social-Links
+        <ul class="links">
+            <li><a href="https://www.instagram.com/shadow_lucifer3000/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/udayan.majumder.581"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://mobile.twitter.com/Udayan18951380"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/udayan-majumder"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./javascript/slider_i.js"></script>
+</body>
+
+</html>
