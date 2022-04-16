@@ -21,8 +21,6 @@ select {
 
 .home-page-search {
     height: 100vh;
-    position:relative;
-    top:2cm;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,7 +507,11 @@ body {
         color: lightgreen;
 
     }
-
+    
+    .home-page-search{
+        position:relative;
+        top:2cm;
+    }
     .home-page-search img {
         position: absolute;
         height: 100vh;
