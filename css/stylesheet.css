@@ -22,7 +22,7 @@ select {
 .home-page-search {
     height: 100vh;
     position:relative;
-    top:5cm;
+    top:2cm;
     display: flex;
     justify-content: center;
     align-items: center;
