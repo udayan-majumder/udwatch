@@ -530,7 +530,7 @@ body {
 
     }
 
-    .icon-dropdown li:hover .icon-dropdown-inside {
+    .icon-dropdown li a:hover .icon-dropdown-inside {
         visibility: visible;
     }
 
