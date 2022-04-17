@@ -502,7 +502,7 @@ body {
         visibility: hidden;
     }
 
-    .icon-dropdown li a:hover,
+    .icon-dropdown li:hover,
     a.active {
         color: lightgreen;
 
@@ -530,7 +530,7 @@ body {
 
     }
 
-    .icon-dropdown li a:hover .icon-dropdown-inside {
+    .icon-dropdown li:hover .icon-dropdown-inside {
         visibility: visible;
     }
 
